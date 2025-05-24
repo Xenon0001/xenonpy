@@ -1,0 +1,205 @@
+    {% extends "layout.html" %}
+
+    {% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/about_us.css')}}">
+    {% endblock %}
+
+    {% block header %}
+
+    {% endblock %}
+
+    {% block main %}
+    <!-- Hero Section -->
+    <section class="hero-about">
+        <div class="container">
+            <h1 class="hero-about-title">Quiénes somos</h1>
+            <p class="hero-about-text">Xenon.py es una startup tecnológica fundada en Guinea Ecuatorial, dedicada a la innovación educativa y el desarrollo de software con impacto social.</p>
+        </div>
+    </section>
+
+    <!-- About Company -->
+    <section class="section about-company">
+        <div class="container">
+            <div class="about-content fade-in">
+                <p class="about-text">En Xenon.py combinamos nuestra pasión por la tecnología con el compromiso de transformar la educación en Guinea Ecuatorial. Creemos firmemente que el acceso al conocimiento tecnológico puede cambiar el destino de personas y comunidades enteras.</p>
+                <p class="about-text">Nuestro nombre, Xenon.py, refleja nuestra esencia: Xenon como símbolo de innovación y luz (por el gas noble usado en iluminación), y .py como representación de nuestro enfoque en Python y el desarrollo de software.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section mission-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestros Pilares Fundamentales</h2>
+            <p class="section-subtitle fade-in">Lo que nos guía en cada proyecto y decisión</p>
+            
+            <div class="mission-grid">
+                <div class="mission-card fade-in">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="mission-title">Misión</h3>
+                    <p>Democratizar la tecnología en Guinea Ecuatorial a través de soluciones educativas, software útil y oportunidades para jóvenes, reduciendo la brecha digital y fomentando la innovación local.</p>
+                </div>
+                
+                <div class="mission-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="mission-title">Visión</h3>
+                    <p>Ser un referente africano en innovación tecnológica y formación, creando una generación de desarrolladores talentosos que impulsen la transformación digital de Guinea Ecuatorial y contribuyan al ecosistema tecnológico global.</p>
+                </div>
+                
+                <div class="mission-card fade-in" style="transition-delay: 0.4s;">
+                    <div class="mission-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="mission-title">Valores</h3>
+                    <p><strong>Compromiso:</strong> Con nuestro país y nuestra gente.<br>
+                       <strong>Creatividad:</strong> Soluciones innovadoras a problemas locales.<br>
+                       <strong>Impacto social:</strong> Tecnología con propósito.<br>
+                       <strong>Formación continua:</strong> Aprendemos y enseñamos constantemente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section history-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestra Historia</h2>
+            <p class="section-subtitle fade-in">Cómo comenzó este viaje tecnológico</p>
+            
+            <div class="history-content">
+                <div class="history-text fade-in">
+                    <p>Xenon.py nació en 2021 como un sueño de Luis Rafael Eyoma, un joven programador autodidacta que descubrió el poder transformador de la tecnología mientras aprendía a programar con recursos limitados en Malabo.</p>
+                    
+                    <p>Frustrado por la falta de oportunidades y recursos tecnológicos accesibles en Guinea Ecuatorial, Luis decidió crear una plataforma que pudiera ayudar a otros jóvenes a aprender programación y habilidades digitales sin las barreras que él enfrentó.</p>
+                    
+                    <p>Lo que comenzó como un pequeño blog con tutoriales de Python se convirtió rápidamente en una comunidad de aprendizaje y luego en una startup con proyectos reales que están impactando el sector educativo y empresarial del país.</p>
+                    
+                    <p>Hoy, Xenon.py es más que una empresa: es un movimiento que busca encender la chispa tecnológica en Guinea Ecuatorial y demostrar que el talento y la innovación no conocen fronteras.</p>
+                </div>
+                
+                <div class="history-image fade-in" style="transition-delay: 0.3s;">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Fundador de Xenon.py trabajando">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Nuestro Equipo</h2>
+            <p class="section-subtitle fade-in">Las personas detrás de Xenon.py</p>
+            
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Luis Rafael Eyoma" class="team-image">
+                    <div class="team-info">
+                        <h3 class="team-name">Luis Rafael Eyoma</h3>
+                        <p class="team-position">Fundador & CEO</p>
+                        <p class="team-bio">Programador autodidacta, apasionado por la educación tecnológica y el desarrollo de software con impacto social. Creador de varias plataformas educativas y aplicaciones para PYMEs en Guinea Ecuatorial.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="placeholder-team">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Próximamente</h3>
+                        <p>Estamos buscando talentos apasionados por la tecnología y la educación para unirse a nuestro equipo.</p>
+                    </div>
+                </div>
+                
+                <div class="team-card fade-in" style="transition-delay: 0.4s;">
+                    <div class="placeholder-team">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Próximamente</h3>
+                        <p>¿Quieres ser parte de nuestro equipo? Contáctanos y cuéntanos cómo puedes contribuir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <p class="quote-text fade-in">"Creemos que el conocimiento compartido y la tecnología pueden transformar naciones, una línea de código a la vez."</p>
+            <p class="quote-author fade-in">— Equipo Xenon.py</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <h2 class="cta-title fade-in">¿Quieres formar parte de nuestra historia?</h2>
+            <a href="#contact" class="btn btn-primary fade-in" style="transition-delay: 0.2s;">Colabora con nosotros</a>
+        </div>
+    </section>
+    {% endblock %}
+
+    <!-- Footer -->
+    {% block footer %}
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-atom footer-logo-icon"></i>
+                    <span>Xenon.py</span>
+                </div>
+                <p class="footer-text">Impulsando la innovación tecnológica y la educación digital en Guinea Ecuatorial.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="/" class="footer-link">Inicio</a></li>
+                    <li><a href="/nosotros" class="footer-link">Sobre Nosotros</a></li>
+                    <li><a href="/servicios" class="footer-link">Servicios</a></li>
+                    <li><a href="/proyectos class="footer-link">Portafolio</a></li>
+                    <li><a href="/" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3 class="footer-title">Servicios</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Desarrollo de Software</a></li>
+                    <li><a href="#" class="footer-link">Gestión Educativa</a></li>
+                    <li><a href="#" class="footer-link">Formación Tecnológica</a></li>
+                    <li><a href="#" class="footer-link">Consultoría TIC</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:info@xenon.py" class="footer-link">info@xenon.py</a></li>
+                    <li><a href="#" class="footer-link">Malabo, Guinea Ecuatorial</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Xenon.py. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    {% endblock %}
+
+    <script src="{{url_for('static', filename = 'js/main.js')}}">
+    </script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+    {% extends "layout.html" %}
+
+    {% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/services.css')}}">
+    {% endblock %}
+
+    {% block header %}
+
+    {% endblock %}
+
+    {% block main %}
+    <!-- Hero Section -->
+    <section class="hero-services">
+        <div class="container">
+            <h1 class="hero-services-title">Nuestros Servicios</h1>
+            <p class="hero-services-text">En Xenon.py ofrecemos soluciones digitales y educativas para empoderar a comunidades y empresas de Guinea Ecuatorial.</p>
+        </div>
+    </section>
+
+    <!-- Services List Section -->
+    <section class="section services-list">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Desarrollo de Software</h3>
+                    <p>Aplicaciones a medida para empresas, instituciones educativas y organizaciones. Creamos soluciones adaptadas a las necesidades específicas de cada cliente, con tecnología moderna y escalable.</p>
+                </div>
+                
+                <div class="service-card fade-in" style="transition-delay: 0.1s;">
+                    <div class="service-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="service-title">Gestión Educativa</h3>
+                    <p>Sistemas para escuelas e institutos, como GES (Gestor Escolar). Digitalizamos procesos académicos y administrativos para mejorar la eficiencia en instituciones educativas.</p>
+                </div>
+                
+                <div class="service-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="service-title">Formación Tecnológica</h3>
+                    <p>Cursos y talleres presenciales y digitales (como Aprende Python desde Guinea). Capacitamos en habilidades digitales clave para el mercado laboral actual.</p>
+                </div>
+                
+                <div class="service-card fade-in" style="transition-delay: 0.3s;">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="service-title">Consultoría TIC</h3>
+                    <p>Asesoramiento en transformación digital, automatización y optimización de procesos. Ayudamos a organizaciones a implementar tecnología de manera estratégica.</p>
+                </div>
+                
+                <div class="service-card fade-in" style="transition-delay: 0.4s;">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Diseño Web</h3>
+                    <p>Sitios web responsivos y modernos para negocios y proyectos personales. Creamos presencia digital atractiva y funcional que comunica efectivamente tu mensaje.</p>
+                </div>
+                
+                <div class="service-card fade-in" style="transition-delay: 0.5s;">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="service-title">Soluciones a Medida</h3>
+                    <p>Proyectos personalizados según las necesidades del cliente. Desde ideas simples hasta sistemas complejos, desarrollamos tecnología que resuelve problemas reales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose-us">
+        <div class="container">
+            <h2 class="section-title fade-in">¿Por qué elegir Xenon.py?</h2>
+            <p class="section-subtitle fade-in">Nuestro enfoque único para el desarrollo tecnológico</p>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Experiencia Local</h3>
+                    <p>Conocemos profundamente el contexto y necesidades específicas de Guinea Ecuatorial, lo que nos permite ofrecer soluciones realmente adaptadas.</p>
+                </div>
+                
+                <div class="feature-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="feature-title">Visión Social</h3>
+                    <p>No solo buscamos ganancias, sino generar un impacto positivo en nuestra sociedad a través de la tecnología y la educación.</p>
+                </div>
+                
+                <div class="feature-card fade-in" style="transition-delay: 0.4s;">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="feature-title">Atención Personalizada</h3>
+                    <p>Cada cliente recibe atención directa de nuestro equipo fundador, garantizando comunicación clara y soluciones a medida.</p>
+                </div>
+                
+                <div class="feature-card fade-in" style="transition-delay: 0.6s;">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">Compromiso con la Formación</h3>
+                    <p>Incluimos capacitación en cada proyecto para que nuestros clientes puedan aprovechar al máximo las soluciones implementadas.</p>
+                </div>
+                
+                <div class="feature-card fade-in" style="transition-delay: 0.8s;">
+                    <div class="feature-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3 class="feature-title">Tecnología Accesible</h3>
+                    <p>Diseñamos soluciones que funcionan incluso con limitaciones de infraestructura tecnológica, pensando en la realidad local.</p>
+                </div>
+                
+                <div class="feature-card fade-in" style="transition-delay: 1s;">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="feature-title">Relaciones a Largo Plazo</h3>
+                    <p>Acompañamos a nuestros clientes en su crecimiento, ofreciendo soporte continuo y actualizaciones según sus necesidades cambiantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-services">
+        <div class="container">
+            <h2 class="cta-title fade-in">¿Tienes una idea o proyecto?</h2>
+            <p class="hero-services-text fade-in" style="transition-delay: 0.2s;">Podemos ayudarte a hacerlo realidad</p>
+            <a href="#contact" class="btn btn-primary fade-in" style="transition-delay: 0.4s;">Solicita una consulta gratuita</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">Lo que dicen nuestros clientes</h2>
+            <p class="section-subtitle fade-in">Experiencias reales con nuestros servicios</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">Xenon.py transformó completamente la gestión de nuestra escuela. El sistema GES ha simplificado nuestros procesos administrativos y nos permite enfocarnos más en la educación.</p>
+                    <p class="testimonial-author">— Juan Mba, Director de Escuela</p>
+                </div>
+                
+                <div class="testimonial-card fade-in" style="transition-delay: 0.2s;">
+                    <p class="testimonial-text">Gracias al curso "Aprende Python desde Guinea", pude conseguir mi primer trabajo como desarrollador. La metodología práctica y el enfoque en nuestra realidad local marcaron la diferencia.</p>
+                    <p class="testimonial-author">— María Nsue, Estudiante</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section contact-services" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">¿Listo para comenzar?</h2>
+            <p class="section-subtitle fade-in">Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas</p>
+            
+            <div class="contact-container fade-in">
+                <form id="serviceContactForm">
+                    <div class="form-group">
+                        <label for="contactName" class="form-label">Nombre completo</label>
+                        <input type="text" id="contactName" class="form-input" required>
+                        <div class="form-error" id="nameError">Por favor ingresa tu nombre completo</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactEmail" class="form-label">Correo electrónico</label>
+                        <input type="email" id="contactEmail" class="form-input" required>
+                        <div class="form-error" id="emailError">Por favor ingresa un correo válido</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactService" class="form-label">Servicio de interés</label>
+                        <select id="contactService" class="form-select" required>
+                            <option value="" disabled selected>Selecciona un servicio</option>
+                            <option value="desarrollo">Desarrollo de Software</option>
+                            <option value="educacion">Gestión Educativa</option>
+                            <option value="formacion">Formación Tecnológica</option>
+                            <option value="consultoria">Consultoría TIC</option>
+                            <option value="diseno">Diseño Web</option>
+                            <option value="personalizado">Solución a Medida</option>
+                        </select>
+                        <div class="form-error" id="serviceError">Por favor selecciona un servicio</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactMessage" class="form-label">Cuéntanos sobre tu proyecto</label>
+                        <textarea id="contactMessage" class="form-textarea" required></textarea>
+                        <div class="form-error" id="messageError">Por favor descríbenos tu proyecto o consulta</div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    {% endblock %}
+
+    <!-- Footer -->
+    {% block footer %}
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-atom footer-logo-icon"></i>
+                        <span>Xenon.py</span>
+                    </div>
+                    <p class="footer-text">Impulsando la innovación tecnológica y la educación digital en Guinea Ecuatorial.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Inicio</a></li>
+                        <li><a href="/nosotros" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="/servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="/proyectos" class="footer-link">Portafolio</a></li>
+                        <li><a href="/" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Desarrollo de Software</a></li>
+                        <li><a href="#" class="footer-link">Gestión Educativa</a></li>
+                        <li><a href="#" class="footer-link">Formación Tecnológica</a></li>
+                        <li><a href="#" class="footer-link">Consultoría TIC</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@xenon.py" class="footer-link">info@xenon.py</a></li>
+                        <li><a href="#" class="footer-link">Malabo, Guinea Ecuatorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Xenon.py. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    {% endblock %}
+
+    <script src="{{url_for('static', filename = 'js/main.js')}}">
+        // Menú hamburguesa para móviles
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Validación del formulario
+            const contactForm = document.getElementById('serviceContactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    let isValid = true;
+                    
+                    // Validar nombre
+                    const name = document.getElementById('contactName').value.trim();
+                    const nameError = document.getElementById('nameError');
+                    if (!name) {
+                        nameError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        nameError.classList.remove('show');
+                    }
+                    
+                    // Validar email
+                    const email = document.getElementById('contactEmail').value.trim();
+                    const emailError = document.getElementById('emailError');
+                    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                        emailError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        emailError.classList.remove('show');
+                    }
+                    
+                    // Validar servicio
+                    const service = document.getElementById('contactService').value;
+                    const serviceError = document.getElementById('serviceError');
+                    if (!service) {
+                        serviceError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        serviceError.classList.remove('show');
+                    }
+                    
+                    // Validar mensaje
+                    const message = document.getElementById('contactMessage').value.trim();
+                    const messageError = document.getElementById('messageError');
+                    if (!message) {
+                        messageError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        messageError.classList.remove('show');
+                    }
+                    
+                    // Si todo es válido, enviar formulario (simulado)
+                    if (isValid) {
+                        alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+                        contactForm.reset();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
