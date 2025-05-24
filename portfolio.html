@@ -1,0 +1,261 @@
+    {% extends "layout.html" %}
+
+    {% block head %}
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/portfolio.css')}}">
+    {% endblock %}
+
+    {% block header %}
+
+    {% endblock %}
+
+    {% block main %}
+    <!-- Hero Section -->
+    <section class="hero-portfolio">
+        <div class="container">
+            <h1 class="hero-portfolio-title">Nuestros Proyectos</h1>
+            <p class="hero-portfolio-text">Explora nuestro trabajo y descubre cómo estamos transformando la tecnología en Guinea Ecuatorial con soluciones innovadoras y de impacto.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters" id="portfolioFilters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="educacion">Educación</button>
+                <button class="filter-btn" data-filter="salud">Salud</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Proyecto 1 - GES -->
+                <div class="portfolio-item" data-category="educacion software">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="GES - Gestor Escolar" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Educación</span>
+                        <h3 class="portfolio-title">GES - Gestor Escolar</h3>
+                        <p class="portfolio-description">Sistema integral de gestión educativa para instituciones en Guinea Ecuatorial.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <button class="btn btn-outline view-project" data-project="ges">Ver detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 - Aprende Python -->
+                <div class="portfolio-item" data-category="educacion">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Aprende Python desde Guinea" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Educación</span>
+                        <h3 class="portfolio-title">Aprende Python desde Guinea</h3>
+                        <p class="portfolio-description">Plataforma de formación en programación adaptada al contexto ecuatoguineano.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <button class="btn btn-outline view-project" data-project="python">Ver detalles</button>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 - Salud Conectada -->
+                <div class="portfolio-item" data-category="salud software">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Salud Conectada" class="portfolio-image">
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Salud</span>
+                        <h3 class="portfolio-title">Salud Conectada</h3>
+                        <p class="portfolio-description">Sistema para conectar hospitales y mejorar la gestión de pacientes en Guinea Ecuatorial.</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <button class="btn btn-outline view-project" data-project="salud">Ver detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title" style="color: var(--blanco);">Nuestro Impacto</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Algunas cifras que nos enorgullecen</p>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-text">Proyectos lanzados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-text">Estudiantes impactados</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-text">Instituciones beneficiadas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-text">Satisfacción del cliente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-portfolio">
+        <div class="container">
+            <h2 class="cta-title">¿Tienes un proyecto en mente?</h2>
+            <p class="section-subtitle">¡Hagámoslo realidad juntos!</p>
+            <a href="#contact" class="btn btn-primary">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal GES -->
+    <div class="modal" id="gesModal">
+        <div class="modal-content">
+            <div class="modal-close">&times;</div>
+            <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="GES - Gestor Escolar" class="modal-image">
+            <div class="modal-body">
+                <span class="modal-category">Educación</span>
+                <h2 class="modal-title">GES - Gestor Escolar</h2>
+                <p class="modal-description">
+                    GES (Gestor Escolar) es un sistema integral desarrollado para digitalizar y optimizar los procesos administrativos y académicos en instituciones educativas de Guinea Ecuatorial. La plataforma permite gestionar matrículas, calificaciones, asistencia, horarios y comunicación entre docentes, estudiantes y padres de familia.
+                </p>
+                <p class="modal-description">
+                    Desarrollado con tecnologías modernas y adaptado a la realidad de las escuelas en el país, GES ha demostrado ser una herramienta invaluable para mejorar la eficiencia y transparencia en la gestión educativa.
+                </p>
+                <h3>Tecnologías utilizadas</h3>
+                <div class="modal-tech">
+                    <span class="modal-tech-tag">Python</span>
+                    <span class="modal-tech-tag">Django</span>
+                    <span class="modal-tech-tag">PostgreSQL</span>
+                    <span class="modal-tech-tag">HTML5/CSS3</span>
+                    <span class="modal-tech-tag">JavaScript</span>
+                </div>
+                <button class="btn btn-primary">Visitar sitio web</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Aprende Python -->
+    <div class="modal" id="pythonModal">
+        <div class="modal-content">
+            <div class="modal-close">&times;</div>
+            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Aprende Python desde Guinea" class="modal-image">
+            <div class="modal-body">
+                <span class="modal-category">Educación</span>
+                <h2 class="modal-title">Aprende Python desde Guinea</h2>
+                <p class="modal-description">
+                    "Aprende Python desde Guinea" es una plataforma de formación en programación diseñada específicamente para jóvenes ecuatoguineanos. El curso parte desde cero y utiliza ejemplos y proyectos relevantes al contexto local, haciendo el aprendizaje más accesible y significativo.
+                </p>
+                <p class="modal-description">
+                    La plataforma incluye lecciones interactivas, ejercicios prácticos, proyectos reales y una comunidad de apoyo. Hasta la fecha, más de 50 estudiantes han completado el programa, muchos de los cuales han conseguido empleo en el sector tecnológico o iniciado sus propios emprendimientos.
+                </p>
+                <h3>Tecnologías utilizadas</h3>
+                <div class="modal-tech">
+                    <span class="modal-tech-tag">Python</span>
+                    <span class="modal-tech-tag">JavaScript</span>
+                    <span class="modal-tech-tag">HTML5/CSS3</span>
+                    <span class="modal-tech-tag">Flask</span>
+                    <span class="modal-tech-tag">SQLite</span>
+                </div>
+                <button class="btn btn-primary">Visitar plataforma</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Salud Conectada -->
+    <div class="modal" id="saludModal">
+        <div class="modal-content">
+            <div class="modal-close">&times;</div>
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Salud Conectada" class="modal-image">
+            <div class="modal-body">
+                <span class="modal-category">Salud</span>
+                <h2 class="modal-title">Salud Conectada</h2>
+                <p class="modal-description">
+                    Salud Conectada es un sistema diseñado para mejorar la comunicación y gestión de pacientes entre hospitales y centros de salud en Guinea Ecuatorial. La plataforma permite el registro centralizado de pacientes, historiales médicos digitales, programación de citas y seguimiento de tratamientos.
+                </p>
+                <p class="modal-description">
+                    Desarrollado en colaboración con profesionales de la salud locales, el sistema respeta las normativas de privacidad y está adaptado a la infraestructura tecnológica disponible en el país. Actualmente en fase piloto en dos hospitales de Malabo, con planes de expansión a nivel nacional.
+                </p>
+                <h3>Tecnologías utilizadas</h3>
+                <div class="modal-tech">
+                    <span class="modal-tech-tag">Python</span>
+                    <span class="modal-tech-tag">Flask</span>
+                    <span class="modal-tech-tag">MySQL</span>
+                    <span class="modal-tech-tag">JavaScript</span>
+                    <span class="modal-tech-tag">Bootstrap</span>
+                </div>
+                <button class="btn btn-primary">Saber más</button>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+    <!-- Footer -->
+    <!-- Footer -->
+    {% block footer %}
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-atom footer-logo-icon"></i>
+                        <span>Xenon.py</span>
+                    </div>
+                    <p class="footer-text">Impulsando la innovación tecnológica y la educación digital en Guinea Ecuatorial.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="/" class="footer-link">Inicio</a></li>
+                        <li><a href="/nosotros" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="/servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="/proyectos" class="footer-link">Portafolio</a></li>
+                        <li><a href="/" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Desarrollo de Software</a></li>
+                        <li><a href="#" class="footer-link">Gestión Educativa</a></li>
+                        <li><a href="#" class="footer-link">Formación Tecnológica</a></li>
+                        <li><a href="#" class="footer-link">Consultoría TIC</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@xenon.py" class="footer-link">info@xenon.py</a></li>
+                        <li><a href="#" class="footer-link">Malabo, Guinea Ecuatorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Xenon.py. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    {% endblock %}
+
+    <script src="{{url_for('static', filename = 'js/main.js')}}">
+    </script>
+</body>
+</html>

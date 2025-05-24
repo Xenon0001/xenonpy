@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xenon.py | Startup Tecnológica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    {% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-atom logo-icon"></i>
+                <span>Xenon.py</span>
+            </a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="/" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="/nosotros" class="nav-link">Sobre nosotros</a></li>
+                    <li class="nav-item"><a href="/servicios" class="nav-link">Servicios</a></li>
+                    <li class="nav-item"><a href="/proyectos" class="nav-link">Portafolio</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link btn btn-secondary">Suscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    {% block main %}
+
+
+
+    {% endblock %}
+
+    
+    <footer>
+        {% block footer %}
+        
+        {% endblock %}
+    </footer>
+
+    <script src="{{url_for('static', filename = 'js/main.js')}}">
+        // Menú hamburguesa para móviles
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Validación del formulario
+            const contactForm = document.getElementById('serviceContactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    let isValid = true;
+                    
+                    // Validar nombre
+                    const name = document.getElementById('contactName').value.trim();
+                    const nameError = document.getElementById('nameError');
+                    if (!name) {
+                        nameError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        nameError.classList.remove('show');
+                    }
+                    
+                    // Validar email
+                    const email = document.getElementById('contactEmail').value.trim();
+                    const emailError = document.getElementById('emailError');
+                    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                        emailError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        emailError.classList.remove('show');
+                    }
+                    
+                    // Validar servicio
+                    const service = document.getElementById('contactService').value;
+                    const serviceError = document.getElementById('serviceError');
+                    if (!service) {
+                        serviceError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        serviceError.classList.remove('show');
+                    }
+                    
+                    // Validar mensaje
+                    const message = document.getElementById('contactMessage').value.trim();
+                    const messageError = document.getElementById('messageError');
+                    if (!message) {
+                        messageError.classList.add('show');
+                        isValid = false;
+                    } else {
+                        messageError.classList.remove('show');
+                    }
+                    
+                    // Si todo es válido, enviar formulario (simulado)
+                    if (isValid) {
+                        alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+                        contactForm.reset();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
